@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='Login.css') }}">
+
+</head>
+<body>
+    <form action="" method="POST">
+
+            
+    {{form.username.label}}{{form.username}}
+    {% if form.username.errors %}
+        <ul>
+            {%for error in form.username.errors%}
+            <li style="color: red;">{{error}}</li>
+            {% endfor %}
+        </ul>
+    {% endif %}
+    
+    
+    {{form.password.label}}{{form.password}}
+    {% if form.password.errors %}
+        <ul>
+            {%for error in form.password.errors%}
+            <li style="color: red;">{{error}}</li>
+            {% endfor %}
+        </ul>
+    {% endif %}
+    <button type="submit" id="login" name="login">Login</button>
+    <button type="submit" id="create" name="create">Create</button>
+    {{ form.hidden_tag() }}  
+
+    </form>
+</body>
+</html>

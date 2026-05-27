@@ -1,0 +1,71 @@
+#QRdiv{
+    background-color: #0982e4;
+    display: flex;
+    justify-content: center;
+    width: 50vw;
+    margin: auto;
+    margin-top:3% ;
+    height: 80vh;
+    border: solid black 2px;
+    border-radius: 10% /15%;
+    align-items: center;
+}
+#QRdiv img{
+    padding: 10px;
+}
+body{
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+}
+
+#login{
+    width: min-content;
+    height: min-content;
+    position: absolute;
+}
+#login a button{
+    color:rgb(0, 0, 0);
+    background-color: #0982e4;
+    font-size:1.2rem;
+    width: 120%;
+    border-radius: 20%/40%;
+    border: black solid 1.5px;
+
+}
+#login a button:hover{
+    background-color:#0982e4;
+}
+
+@media (max-width:768px){
+    body{
+        display: flex;
+        background-color: #0982e4;
+        flex-direction: column-reverse;
+        gap:10px;
+    }   
+    #login{
+        width: min-content;
+        height: min-content;
+        position: relative;
+        margin: auto;
+    }
+    #login a button{
+        color:rgb(0, 0, 0);
+        background-color: #0982e4;
+        font-size:1.2rem;
+        width: 120%;
+        border-radius: 20%/40%;
+        border: black solid 1.5px;
+
+    }
+    #QRdiv{
+        background-color: #0982e4;
+    
+        width: 100vw;
+        height: 100vh;
+        border: none black 2px;
+        border-radius: 10% /15%;
+        align-items: center;
+    }
+}

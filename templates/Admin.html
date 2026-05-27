@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dasboard</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='Admin.css') }}">
+
+</head>
+
+<body>
+    <div id="functionContainer">
+        <form action="" method="POST">
+         
+            <button type="submit" id="QR" name="QR">QR</button>
+            <button type="submit" id="CSV" name="CSV">CSV</button>
+            <button type="submit" id="ShowNoneREG" name="ShowNoneREG">Show Entrys</button>
+            <button type="submit" id="DropTable" name="DropTable">DropTable</button>
+        </form>
+    </div>
+    <script>
+        document.getElementById('DropTable').addEventListener('click', function (e) {
+            var confirmed = confirm("⚠️ WARNING: This will permanently delete the entire table! Are you absolutely sure?")
+
+            if (!confirmed) {
+                e.preventDefault()
+            }else{
+            
+            }
+        })
+    
+    </script>
+</body>
+
+</html>

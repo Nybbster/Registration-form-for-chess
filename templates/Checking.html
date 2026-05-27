@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checker</title>
+    <style>
+        
+    </style>
+    <link rel="stylesheet" href="{{ url_for('static', filename='Checking.css') }}">
+</head>
+
+<body>
+    <div id="functionContainer">
+        <form action="" method="POST">
+            <div id="inputContainer">
+                {{form.id.label}}{{form.id}}
+            </div>
+            <div id="buttonContainer">
+
+
+                <button type="submit" id="NotSignedUp" name="NotSignedUp">Not Signed Up</button>
+                <button type="submit" id="unexpected" name="unexpected">unexpected</button>
+                <button type="submit" id="SignedUp" name="SignedUp">SignedUp</button>
+                <button type="submit" id="ShowEntrys" name="ShowEntrys">ShowEntrys</button>
+                {{form.hidden_tag()}}
+            </div>
+        </form>
+
+    </div>
+    <button id="printPapper">
+        print Papper
+    </button>
+    <div id="entryContainer">
+        <p>Firstname | Lastname | Rank | FideID</p>
+        {% if SingedUp %}
+        {% for s in SingedUp %}
+        <p style="background-color: rgb(124, 182, 124);">{{ s }}</p>
+        {% endfor %}
+        {% endif %}
+
+        {% if Unexpexted %}
+        {% for u in Unexpexted %}
+        <p style="background-color: rgb(218, 218, 140);">{{ u }}</p>
+        {% endfor %}
+        {% endif %}
+
+        {% if notHere %}
+        {% for n in notHere %}
+        <p style="background-color: rgb(180, 109, 109);">{{ n }}</p>
+        {% endfor %}
+        {% endif %}
+
+        {% if Data and not SingedUp and not Unexpexted and not notHere %}
+        {% for i in Data %}
+        <p>{{ i }}</p>
+        {% endfor %}
+        {% endif %}
+    </div>
+
+    <script>
+        const printBT = document.getElementById("printPapper")
+        printBT.addEventListener("click", function () {
+            print()
+
+        }) 
+    </script>
+</body>
+
+</html>

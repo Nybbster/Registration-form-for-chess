@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='Registration.css') }}">
+
+</head>
+<body>
+
+    <form action="" method="POST">
+
+    
+    {{form.Firstname.label}}{{form.Firstname}}
+    {% if form.Firstname.errors %}
+        <ul>
+            {%for error in form.Firstname.errors%}
+            <li style="color: red;">{{error}}</li>
+            {% endfor %}
+        </ul>
+    {% endif %}
+    
+    
+    {{form.Lastname.label}}{{form.Lastname}}
+    {% if form.Lastname.errors %}
+        <ul>
+            {%for error in form.Lastname.errors%}
+            <li style="color: red;">{{error}}</li>
+            {% endfor %}
+        </ul>
+    {% endif %}
+
+    {{form.Ranking.label}}{{form.Ranking}}
+    {% if form.Ranking.errors %}
+        <ul>
+            {%for error in form.Ranking.errors%}
+            <li style="color: red;">{{error}}</li>
+            {% endfor %}
+        </ul>
+    {% endif %}
+    
+    {{form.FideID.label}}{{form.FideID}}
+    {% if form.FideID.errors %}
+        <ul>
+            {%for error in form.FideID.errors%}
+            <li style="color: red;">{{error}}</li>
+            {% endfor %}
+        </ul>
+    {% endif %}
+    {{form.hidden_tag()}}
+        <Button type="submit" id="btSubmit">Submit</Button>
+    </form>
+
+
+    
+
+
+
+</body>
+</html>
