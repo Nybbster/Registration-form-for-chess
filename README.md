@@ -2,6 +2,7 @@
 A Flask web application that lets users register for a tournament. Admin page with functions that can export all users signed up, drop the database and compare users that have signed up online and have registered on the page.
 
 **TO RUN THE PROGRAM**
+<br>
 1: Download the repo
 2: Run Index.py 
 3: localhost have opend on port 5000 where u can accsess the page.
