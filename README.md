@@ -4,8 +4,8 @@ A Flask web application that lets users register for a tournament. Admin page wi
 **TO RUN THE PROGRAM**
 <br>
 1: Download the repo <br>
-2: install requierments with 
-´´´bash
+2: install requierments with <br>
+´´´powershell
 pip install -r requirements.txt
 ´´´
 3: Run Index.py <br>
