@@ -3,8 +3,12 @@ A Flask web application that lets users register for a tournament. Admin page wi
 
 **TO RUN THE PROGRAM**
 <br>
-1: Download the repo
-2: Run Index.py 
-3: localhost have opend on port 5000 where u can accsess the page.
+1: Download the repo <br>
+2: install requierments with 
+´´´bash
+pip install -r requirements.txt
+´´´
+3: Run Index.py <br>
+4: localhost have opend on port 5000 where u can accsess the page.<br>
 
 You whould need to put it behinde a proxy or in some way not run it localy to use it in a real world senario.
