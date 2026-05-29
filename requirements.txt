@@ -1,1 +1,7 @@
-
+Flask
+flask-bcrypt
+Flask-WTF
+WTForms
+segno
+Pillow
+requests
