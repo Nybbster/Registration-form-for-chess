@@ -8,6 +8,7 @@ A Flask web application that lets users register for a tournament. Admin page wi
 ´´´powershell
 pip install -r requirements.txt
 ´´´
+<br>
 3: Run Index.py <br>
 4: localhost have opend on port 5000 where u can accsess the page.<br>
 
