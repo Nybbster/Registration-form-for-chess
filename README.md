@@ -17,5 +17,5 @@ python Index.py
 <br>
 4: localhost have opend on port 5000 where u can accsess the page.<br>
 
-You whould need to put it behinde a proxy or in some way not run it localy to use it in a real world senario.
+You whould need to put it behind a proxy or in some way not run it localy to use it in a real world senario.
 To allow users to scan the QR code that takes them to the registration. 
