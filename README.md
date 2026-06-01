@@ -20,42 +20,10 @@ python Index.py
 You whould need to put it behind a proxy or in some way not run it localy to use it in a real world senario.
 To allow users to scan the QR code that takes them to the registration. 
 
-### QR code that binds to host ip and redirect to /Registration
-
-
-
-
-
-
-
-
-
-
-
-
-### Login page for the admin page. (ONLY allows one Admin account)
-
-
-
-
-
-
-
-
-### Admin page where you can go back to the QR page, export everyone that signed up to CSV, look at the entries, and drop everyone that have signed up
-
-
-
-
-
-
-
-
-
-
-
-
-### The Show entry page where you can see and compare signed up and signed up in person at the event. 
+![ QR code that binds to host ip and redirect to /Registration](https://raw.githubusercontent.com/Nybbster/Registration-form-for-chess/refs/heads/main/Sk%C3%A4rmbild%202026-06-01%20120311.png)
+![Login page for the admin page. (ONLY allows one Admin account)]()
+![Admin page where you can go back to the QR page, export everyone that signed up to CSV, look at the entries, and drop everyone that have signed up]()
+![The Show entry page where you can see and compare signed up and signed up in person at the event.]() 
 
 
 
